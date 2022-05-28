@@ -9,7 +9,7 @@ $server->wsdl->addComplexType(
     'struct',
     'all',
     '',
-    array('id_user'=>array('name'=>'id_user','type'=>'xsd:int'),
+    array(
           'nombre'=>array('name'=>'nombre','type'=>'xsd:string'),
           'nota1'=>array('name'=>'nota1','type'=>'xsd:float'),
           'nota2'=>array('name'=>'nota2','type'=>'xsd:float'),
@@ -32,11 +32,9 @@ $server->register(
 function promedio($nombre, $nota1, $nota2, $parcial){
     $promedio=($nota1*0.25)+($nota2*0.25)+($parcial*0.50);
     $conect = mysqli_connect("localhost", "root", "catolica", "registro_danielSanchez");
-    $conect->executeInsert("insert into alumnos_daniel set nombre='{$nombre}', nota1='{$nota1}', 
+    $this->executeInsert("insert into alumnos_daniel set nombre='{$nombre}', nota1='{$nota1}', 
     nota2='{$nota2}', parcial='{$parcial}'");
-    $result=array(
-        'id_user'=>1,
-        'nombre'=>$nombre,
+    $result=array('nombre'=>$nombre,
         'nota1'=>$nota1,
         'nota2'=>$nota2,
         'parcial'=>$parcial,
