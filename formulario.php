@@ -9,24 +9,24 @@
 </head>
 <body>
     <form name="formulario" method="post" action="calculo.php">
-        <div class="mb-3">
-            <label for="nombre" class="form-label">nombre:</label>
+        <div class="col-sm-7 text-center">
+            <label for="nombre" class="col-sm-2 col-form-label">nombre:</label>
             <input type="text" class="form-control" name="nombre" id="nombre">
         </div>
-        <div class="mb-3">
-            <label for="nota1" class="form-label">Laboratorio 1:</label>
+        <div class="col-sm-7 text-center">
+            <label for="nota1" class="col-sm-2 col-form-label">Laboratorio 1:</label>
             <input type="number" class="form-control" name="nota1" id="nota1">
         </div>
-        <div class="mb-3">
-            <label for="nota2" class="form-label">Laboratorio 2:</label>
+        <div class="col-sm-7 text-center">
+            <label for="nota2" class="col-sm-2 col-form-label">Laboratorio 2:</label>
             <input type="number" class="form-control" name="nota2" id="nota2">
         </div>
-        <div class="mb-3">
-            <label for="parcial" class="form-label">Parcial:</label>
+        <div class="col-sm-7 text-center">
+            <label for="parcial" class="col-sm-2 col-form-label">Parcial:</label>
             <input type="number" class="form-control" name="parcial" id="parcial">
         </div>
         <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+            <button type="submit" class="btn btn-success">Enviar</button>
         </div>
     </form>
 </body>
